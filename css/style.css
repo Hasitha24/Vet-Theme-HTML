@@ -88,6 +88,57 @@
     font-weight: bold;
     font-size: 18px;
   }
+
+
+   /* Section 02 */
+   .sec-01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 679px;
+    background:url(../img/Section-02/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .sec-01 h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+   }
+
+   .sec-01 p {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .sec-01 .cards-01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+  }
+
+  .sec-01 .cards-01 .h4{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+    /* Section 03 */
+    /* Section 04 */
+    /* Section 05 */
+    /* Section 06 */
+    /* Section 07 */
+    /* Section 08 */
+    /* Footer */
   
   /* Responsive styles using media queries */
   /* For screens smaller than 600px (e.g., smartphones) */

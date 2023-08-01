@@ -1,28 +1,142 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: sans-serif;
-}
-
-body{
+/* Base styles for the entire website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
     max-width: 1920px;
     margin: 0 auto;
-}
-
-.container{
+    background-color: #507bb9;
+  }
+  
+  .container {
     width: 100%;
-}
-
-.header{
+  }
+  
+  .header {
     width: 100%;
-}
-
-.nav{
+    background-color: #507bb9;
+  }
+  
+  /* Navigation Menu */
+  .nav .logo {
+    color: #ffffff;
+    height: 92px;
+    width: 137px;
+  }
+  
+  .nav {
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 0 7%;
+    padding: 10px 7%;
+    margin: 15px;
     align-items: center;
-}
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: rgba(80, 123, 185, 0.2);
+    font-size: 18px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 679px;
+    background: linear-gradient(0deg, rgba(4, 39, 87, 0.7), rgba(8, 38, 81, 0.7)),
+      url(../img/Section-01/Hero/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .hero button {
+    color: #ffffff;
+    background-color: #edc315;
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Responsive styles using media queries */
+  /* For screens smaller than 600px (e.g., smartphones) */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 30px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  
+    .hero button {
+      padding: 8px 40px;
+      font-size: 16px;
+    }
+  
+    .nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav a {
+      margin: 5px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For screens between 600px and 992px (e.g., tablets) */
+  @media (min-width: 600px) and (max-width: 992px) {
+    .hero h1 {
+      font-size: 40px;
+    }
+  
+    .hero p {
+      font-size: 20px;
+    }
+  
+    .hero button {
+      padding: 10px 45px;
+      font-size: 16px;
+    }
+  }
+  
+  /* For screens larger than 992px (e.g., desktops) */
+  @media (min-width: 992px) {
+    /* Add your responsive styles for larger screens here */
+  }
+  

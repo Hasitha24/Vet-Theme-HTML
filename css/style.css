@@ -90,6 +90,58 @@
     font-size: 18px;
   }
 
+  /* Responsive styles using media queries */
+  /* For screens smaller than 600px (e.g., smartphones) */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 30px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  
+    .hero button {
+      padding: 8px 40px;
+      font-size: 16px;
+    }
+  
+    .nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav a {
+      margin: 5px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* For screens between 600px and 992px (e.g., tablets) */
+  @media (min-width: 600px) and (max-width: 992px) {
+    .hero h1 {
+      font-size: 40px;
+    }
+  
+    .hero p {
+      font-size: 20px;
+    }
+  
+    .hero button {
+      padding: 10px 45px;
+      font-size: 16px;
+    }
+  }
+  
+  /* For screens larger than 992px (e.g., desktops) */
+  @media (min-width: 992px) {
+    /* Add your responsive styles for larger screens here */
+  }
+
+
 
    /* Section 01 */
    .sec-01{
@@ -269,56 +321,6 @@
     /* Section 07 */
     /* Footer */
   
-  /* Responsive styles using media queries */
-  /* For screens smaller than 600px (e.g., smartphones) */
-  @media (max-width: 600px) {
-    .hero h1 {
-      font-size: 30px;
-    }
   
-    .hero p {
-      font-size: 18px;
-    }
-  
-    .hero button {
-      padding: 8px 40px;
-      font-size: 16px;
-    }
-  
-    .nav {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nav a {
-      margin: 5px;
-    }
-  
-    .logo {
-      margin-bottom: 10px;
-    }
-  }
-  
-  /* For screens between 600px and 992px (e.g., tablets) */
-  @media (min-width: 600px) and (max-width: 992px) {
-    .hero h1 {
-      font-size: 40px;
-    }
-  
-    .hero p {
-      font-size: 20px;
-    }
-  
-    .hero button {
-      padding: 10px 45px;
-      font-size: 16px;
-    }
-  }
-  
-  /* For screens larger than 992px (e.g., desktops) */
-  @media (min-width: 992px) {
-    /* Add your responsive styles for larger screens here */
-  }
-
 
   

@@ -56,11 +56,12 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    height: 679px;
+    min-height: 679px;
     background: linear-gradient(0deg, rgba(4, 39, 87, 0.7), rgba(8, 38, 81, 0.7)),
       url(../img/Section-01/Hero/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
   
   .hero h1 {
@@ -94,13 +95,15 @@
    .sec-01{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     max-width: 100%;
-    height: 679px;
+    min-height: 679px;
     background:url(../img/Section-02/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 0 20px;
+   
    }
 
    .sec-01 h1{
@@ -108,63 +111,80 @@
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    padding-top: 15px;
    }
-
-   .sec-01 p {
+   .sec-01 p{
     color: #ffffff;
     font-size: 25px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     padding: 15px;
-  }
-
-  /* .cards-01{
-    width: 100%;
-    padding: 2px;
-  } */
-
-  .cards-01 .column{
-   
-    width: 33.33%;
-    padding: 10px;
-    float:left;
-  }
-  .card-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .sec-01 .cards-01{
+   }
+   .cards-01 .card-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center;
-    padding: 20px;
-  }
+    align-content: center;
+    width: 100%;
+   }
+  .cards-01 .card-row .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    margin: 10px;
+    padding: 5px;
+    
 
-  .sec-01 .cards-01 .h4{
-    color: #ffffff;
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
   }
-
+  
   .sec-01 .cards-01 .card-img{
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+  }
+  .sec-01 .cards-01 .card-row .column h4 {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    /* text-align: center; */
+    padding: 2px;
+  }
+   .sec-01 .cards-01 .card-row .column p {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    /* text-align: center; */
+    padding: 5px;
 
+  }
+
+  /* To make the above section responsive */
+  @media screen and (max-width:768px){
+    .cards-01 .card-row{
+      flex-direction: column;
+    }
+
+    .cards-01 .card-row .column{
+      width: 100%;
+    }
   }
     /* Section 02 */
     .sec-02{
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      /* justify-content: center; */
+      align-items: center; 
       max-width: 100%;
-      height: 679px;
+      min-height: 679px;
       background: linear-gradient(0deg, rgba(225,186,20, 0.2), rgba(225,186,20, 0.2)),
       url(../img/Section-03/bg3new.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 30px;
      }
 
      .sec-02 h1{
@@ -180,6 +200,67 @@
       font-family: 'Nunito', sans-serif;
       text-align: center;
       padding: 15px;
+    }
+
+    .cards-02 .card-row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+     }
+    .cards-02 .card-row .column{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center;
+      align-items: center; */
+      width: 33.33%;
+      margin: 60px;
+      padding: 5px;
+        
+    }
+    .cards-02 .card-row .column .circle{
+      border-radius: 50%;
+      width:250px;
+      height:250px;
+      padding: 50px;
+      background:transparent;
+      border: 10px solid #ffffff;
+      color: #ffffff;
+      text-align: center;
+      justify-content: center;
+      /* line-height: 50px;  */
+      /* font-size: 10px; */
+      /* font-weight: bold; */
+      background-clip: padding-box;
+    }
+       
+    .sec-02 .cards-02 .card-row .column .circle h4 {
+      color: #ffffff;
+      font-size: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      /* text-align: center;  */
+      /* padding: 2px; */
+    }
+     .sec-02 .cards-02 .card-row .column .circle p {
+      color: #ffffff;
+      font-size: 20px;
+      font-family: 'Nunito', sans-serif;
+      /* text-align: center; */
+      /* padding: 5px; */
+  
+    }
+  
+    /* To make the above section responsive */
+    @media screen and (max-width:768px){
+      .cards-02 .card-row{
+        flex-direction: column;
+      }
+  
+      .cards-02 .card-row .column{
+        width: 100%;
+      }
     }
     /* Section 03 */
     /* Section 04 */
@@ -239,9 +320,5 @@
     /* Add your responsive styles for larger screens here */
   }
 
-  @media screen and (max-width: 600px) {
-    card-row{
-      width: 100%;
-    }
-  }
+
   

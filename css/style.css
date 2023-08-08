@@ -356,10 +356,9 @@
       justify-content: center;
       align-items: center;
       width: 50%;
-      margin: 10px;
-      padding: 5px;
-      
-  
+      /* margin: 10px;
+      padding: 5px; */
+      background-color: #041936;  
     }
     
     /* Section 04 */
